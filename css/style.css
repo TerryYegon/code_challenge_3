@@ -1,0 +1,110 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+
+#main-layout.full-screen {
+  background: url('images/blog2.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#main-layout.split-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+
+#container {
+  background: #B97F44;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+#new-post-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-post-form input,
+#new-post-form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#new-post-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#new-post-form button:hover {
+  background-color: #0057b8;
+}
+
+
+#post-list-section {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#post-list {
+  flex: 1;
+  max-width: 300px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.post-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.post-item img {
+  max-width: 100%;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.post-item button {
+  margin-right: 5px;
+}
+
+#post-detail {
+  flex: 2;
+  padding: 20px;
+  background: #fff;
+  overflow-y: auto;
+}
+
+#image-preview {
+  margin-top: 10px;
+  max-width: 100%;
+  display: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
